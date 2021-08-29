@@ -1,11 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Main from './Component/Main'
 
 function App() {
 	return (
-		<div className='App'>
-			<h1>hello</h1>
-		</div>
+		<Router>
+			<Switch>
+				<Route path='/' component={Main}/>
+			</Switch>
+		</Router>
 	);
 }
 
