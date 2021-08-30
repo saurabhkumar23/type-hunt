@@ -26,6 +26,8 @@ function Main() {
 				clearInterval(stopTimeElapsed);
 			}
 		};
+
+
 	}, [timer, timeElapsed]);
 
 	return (
